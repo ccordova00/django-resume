@@ -1,0 +1,53 @@
+<div id='edu-check-all-display'>
+	<div class='card mb-4'>
+		<div class='card-header' id='eduHeading'>
+			<div class='form-check'>
+				<input type='hidden'
+					name='edu-check-all'
+					value='False'>
+		  	<input class='form-check-input' 
+					type='checkbox' id='edu-check-all' 
+					name='edu-check-all' 
+					value='True' checked>
+	  		<label class='form-check-label' 
+					for='edu-check-all'>
+					<h4>Education</h4>
+				</label>
+	  	</div><!--form check-->
+		</div><!-- card header -->
+
+  	<div class='card-body'> <!-- collapse
+	  	id="education"
+	  	data-parent="#accordion"> -->
+			
+			{% for ed in edu %}
+			<div id='edu-check-{{ ed.id }}-display'>
+				<div class='card mb-4'>
+					<div class='card-header'>
+						<div class='form-check'>
+							<input type='hidden' 
+								name='edu-check-{{ ed.id }}' 
+								value="False">
+							<input class='form-check-input' 
+								type='checkbox' 
+								id='edu-check-{{ ed.id }}' 
+								name='edu-check-{{ ed.id }}' 
+								value='True' checked>
+							<label class='form-check-label' 
+								for='edu-check-{{ ed.id }}'>
+								{{ ed.degree }}
+							</label>
+						</div><!-- form check -->
+					</div><!-- card header -->
+					<div class='card-body'>
+					<ul class='list-group ml-4'> 
+						<li class='list-item'>{{ ed.school }}, {{ ed.grad_date }} {{ ed.gpa }} GPA</li>
+					</ul>
+					</div><!-- card body-->
+				</div><!-- end card-->
+			</div><!-- edu check display-->
+			{% endfor %}
+			
+  	</div><!-- card body -->
+	</div><!-- card education -->
+</div><!--card education display -->

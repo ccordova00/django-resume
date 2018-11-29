@@ -1,0 +1,43 @@
+{% extends "index_base.html" %}
+{% load static %}     
+{% block title %}Corban T. Cordova{% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluid bg-secondary ">
+  <!--<div class='display-4'>Corban T. Cordova</div>-->
+<div class="jumbotron mb-4">
+  <h1 class="display-3" id="name" >Corban T. Cordova</h1>
+  <p class="lead" id='tagline' >I.T. Triple Threat
+    <hr class="my-2">
+   <ul>
+  <li id="bullet1" >17 Years I.T. Experience</li>
+  <li id="bullet2" >CISSP Certified</li>
+  <li id="bullet3" >Web App Developer</li>
+   </ul>
+   <p id="resume" >Check out my interactive <a href="{% url 'resume:front_page' %}">resume</a>
+  </p>
+</div> <!-- jumbotron -->
+<!--  
+  <div class='text-center display-4' style='text-decoration: underline;'>Corban T. Cordova</div>
+  <div>
+    I.T.Triple Threat
+  </div>
+  <div>
+    17 years IT experience
+  </div>
+  <div>
+    CISSP Certified
+  </div>
+  <div>
+    Web Application Developer
+  </div>
+  -->
+<div class='bg-secondary'>
+<p>&nbsp;</p>
+</div>
+</div><!-- container-fluid -->
+
+
+{% endblock %}

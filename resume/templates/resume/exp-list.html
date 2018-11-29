@@ -1,0 +1,32 @@
+<div id='exp-check-{{ job.id }}-display'>
+	<div class='card mb-4'>    
+		<div class='card-header'>
+			<div class='form-check'>
+				<input type='hidden'
+						name='exp-check-{{ job.id }}'
+						value='False'>
+				<input class='form-check-input' 
+						type='checkbox'
+						id='exp-check-{{ job.id }}'
+						name='exp-check-{{ job.id }}'
+						value='True' checked>
+						<label class='form-check-label' 
+						for='exp-check-{{ job.id }}'>
+						{{ job.company }}, ({{ job.start_date}} - {{ job.end_date|default:"Present" }})
+						</label>
+
+			</div><!-- form check -->
+		</div><!-- header -->
+		<div class='card-body'>
+			<div class='font-italic'>{{ job.title }}</div>
+				<a href="#a{{ job.id }}_desc" data-toggle='collapse'>More about {{ job.company }}</a>
+				<div id="a{{ job.id }}_desc" class='collapse'>
+					{{ job.info }}
+				</div>
+			<ul>
+					<li class='head'>Responsibilities</li>
+				{{ job.duties|safe }}    
+			</ul>
+		</div><!-- card-body -->
+	</div><!-- card -->
+</div><!-- exp-check-{{ job.id }}-display -->

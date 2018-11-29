@@ -1,0 +1,45 @@
+{% extends "index_base.html" %}
+{% load static %}
+{% load resume_tags %}
+{% block title %}Corban T. Cordova{% endblock %}
+
+{% block content %}
+<form action='.' method='post'>
+{% comment %}
+  <div id='download-pdf' class='sticky-top'>
+   
+  </div><!--download pdf-->
+  {% endcomment %}
+  <div class="bg-dark">
+    <button type="submit" class="btn btn-primary clearfix float-right sticky-top">Download PDF</button>
+      <div class='text-left text-md-center mb-4 text-light'><h2>Corban Cordova</h2> 
+        </div>
+      <div class='alert alert-warning' id='intro-box'><a href=# class='float-right' id='close-intro'>X</a>
+      <b>Instructions:</b> Select the checkboxes next to the 
+      items below which are relevant to you. Deselect the items which are not relevant. 
+      Once you are finished click on the "Download PDF" button to download a PDF of the 
+      selected sections. 
+      </div> <!-- alert warning -->
+    <div id="accordion">
+      {% include 'resume/cert.html' %}
+      {% comment %}
+      {% include 'resume/onlineResources.html' %}
+      {% endcomment %}
+      {% include "resume/skill.html" %}
+      {% include "resume/exp.html" %}
+      {% include 'resume/ed.html' %}
+ 
+    </div><!-- accordion -->
+
+    <div class='card mb-4'>
+    </div>
+  </div><!-- bg-dark -->
+  {% csrf_token %}
+</form>
+{% endblock %}
+
+{% block myinclude %}
+<script type='text/javascript' src="{% static "js/resume.js" %}"></script>
+{% endblock %}
+
+

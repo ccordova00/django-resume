@@ -1,0 +1,400 @@
+{% extends "index_base.html" %}
+{% load static %}     
+{% block title %}Corban T. Cordova{% endblock %}
+
+{% block content %}
+<style>
+  li.head {
+  text-decoration: underline;
+  list-style-type: none;
+  font-size: 1em;
+  }
+</style>
+
+<div class="bg-dark">
+  <div class='text-center display-4 mb-4 text-light'>Corban T. Cordova</div>
+
+  <div id="accordion">
+
+    <div class='card mb-4'>
+      <div class='card-header' id='certHeading'>
+	<h4>Professional Certifications</h4>
+	<button type="button" class="btn btn-primary float-right">Download PDF</button>
+	<a href="#certifications"
+	   data-toggle="collapse"
+	   data-parent="#accordion"
+	   aria-expanded='true'
+	   aria-controls='certifications'>(Explore)</a>
+      </div><!-- card header -->
+      <div class='card-body collapse show'
+	   aria-labelledby='certHeading'
+	   id="certifications"
+	   data-parent="#accordion">
+	<ul>
+	  <li>Cisco CCENT Certification</li>
+	  <li>(ISC)<sup>2</sup> CISSP Certification<small>&nbsp;<a class='text-secondary'
+								   href="https://www.youracclaim.com/badges/3aec8761-c65d-408b-91e5-bac25ceb94fb/public_url">(Verify)
+	  </a></small></li>
+	  <li>Ignition SCADA Certification</li>
+	  <li>Ricoh Core Certification</li>
+	</ul>
+      </div><!-- card body -->
+    </div><!-- card -->
+    
+    <div class='card mb-4'>
+      <div class='card-header' id='skillsHeading'>
+	<h4>Skills</h4>
+	<a href="#skills"
+	   data-toggle="collapse"
+	   data-parent="#accordion"	   
+	   aria-expanded="false"
+	   aria-controls='skills'>(Explore)</a>
+      </div><!-- card header -->
+      <div class='card-body collapse'
+	   id="skills"
+	   data-parent="#accordion"
+	   aria-labelledby='skillsHeading'>
+	
+	<div class='card'>
+	  <div class='card-header'>Programming</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>Python 2/3 (Django)</li>
+	      <li>PHP (codeigniter)</li>
+	      <li>Java</li>
+	      <li>JavaScript (Angular, JQuery, bootstrap)</li>
+	      <li>HTML, DHTML, XHTML</li>
+	      <li>CSS</li>
+	      <li>Regular Expressions</li>
+	      <li>Shell programming (bash)</li>
+	      <li>(studied: SQL, X86 assembly, Q-Basic, Visual Basic, C/C++, PERL).</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+
+	<div class='card'>
+	  <div class='card-header'>Networking</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>Windows (all versions)</li>
+	      <li>UNIX/Linux (Ubuntu, redhat, slackware, Debian)</li>
+	      <li>Novell netware</li>
+	      <li>Cisco ASA</li>
+	      <li>Cisco routers</li>
+	      <li>Cisco switches</li>
+	      <li>Cisco ISDN routers</li>
+	      <li>Extreme networks switches</li>
+	      <li>Sonicwall</li>
+	      <li>3com 4100 switches</li>
+	      <li>Serial and terminal network devices</li>
+	    </ul>
+	  </div> <!-- card body -->
+	</div><!-- card -->
+	
+	<div class='card'>
+	  <div class='card-header'>Platforms</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>Windows all versions</li>
+	      <li>Windows server all versions</li>
+	      <li>VMWare Workstation 10 – 12</li>
+	      <li>VirtualBox</li>
+	      <li>UNIX (Linux, FreeBSD, SCO, AIX)</li>
+	      <li>Novell Netware 4.1</li>
+	      <li>VAX</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div> <!-- card -->
+	
+	<div class='card'>
+	  <div class='card-header'>Automation</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>PLCs</li>
+	      <li>SCADA</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+	
+	<div class='card'>
+	  <div class='card-header'>Protocols</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>STP (all versions)</li>
+	      <li>OpenVPN</li>
+	      <li>SSH</li>
+	      <li>TCP/IP</li>
+	      <li>RIP/v2</li>
+	      <li>BGP</li>
+	      <li>OSPF</li>
+	      <li>and other various network protocols</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+	
+	<div class='card'>
+	  <div class='card-header'>Applications/Servers</div>
+	  <div class='card-body'>
+	    <ul>
+	      <li>Peachtree</li>
+	      <li>Sage</li>
+	      <li>cPanel</li>
+	      <li>Prelude</li>
+	      <li>VIA e-commerce</li>
+	      <li>SAMBA</li>
+	      <li>Apache</li>
+	      <li>mySQL</li>
+	      <li>SQL Server</li>
+	      <li>Microsoft Visual Studio</li>
+	      <li>emacs</li>
+	      <li>CVS</li>
+	      <li>MS Office Suite(Word, Excel, Outlook, Access, Publisher)</li>
+	      <li>Adobe suite</li>
+	      <li>Paint Shop Pro</li>
+	      <li>MS FrontPage</li>
+	      <li>HomeSite</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+	<a href='#skills' data-toggle="collapse">(Collapse: Skills)</a>
+      </div><!-- card body -->
+    </div> <!-- card -->
+
+    <div class='card mb-4'>
+      <div class='card-header' id='expHeading'>
+	<h4>Professional Experience</h4>
+	<a href="#experience"
+	   data-toggle="collapse"
+	   data-parent="#accordion"
+	   aria-expanded='false'
+	   aria-controls="experience">(Explore)</a>
+      </div><!-- card header -->
+      
+      <div class='card-body collapse'
+	   id="experience"
+	   data-parent="#accordion"
+	   aria-labelledby='expHeading'>
+	
+	<div class='card mb-4'>    
+	  <div class='card-header'>04/2018 - Present, Integra Technologies inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>System Administrator</div>
+	    <a href="#integra_desc" data-toggle='collapse'>More about Integra Technologies</a>
+	    <div id='integra_desc' class='collapse'>
+	      Integra Technologies specializes in full-turnkey die preparation, packaging,
+	      testing and characterization of high reliability semiconductor components and related value-added
+	      services for the Aerospace & Defense, Space, Semiconductor and Medical industries.
+	      Integra services mission-critical applications where dependability and
+	      failure-free performance are paramount.
+	    </div>
+	    <ul>
+	      <li class='head'>Duties</li>
+	      <li>Support internal users break/fix requests and tickets.</li>
+	      <li>Install, configure, and manage esxi, vSphere/vCenter servers.</li>
+	      <li>Administer various Windows servers.</li>
+	      <li>Coordinate with Wichita and Silicon Valley locations.</li>
+	      <li>Administer various network equipment including Cisco ASA and switches</li>
+	    </ul>
+	  </div><!-- card-body -->
+	</div><!-- card -->
+	
+	<div class='card mb-4'>
+	  <div class='card-header'>08/2014 - 04/2018, Haarmeyer Electric inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>I.T. Manager / Python / PLC programmer/ SCADA technician</div>
+	    <a href="#haarm_desc" data-toggle='collapse'>More about Haarmeyer</a>
+	    <div id='haarm_desc' class='collapse'>
+	      Haarmeyer Electric inc. is a family owned electrical company that services and supports the energy industry in the Permian Basin.
+	      The company was started in 1985 by Mr. and Mrs. Haarmeyer and has grown since then to be one of the most trusted local companies to
+	      support energy production companies in southeastern New Mexico and west Texas. Haarmeyer Electric inc. specializes in custom built
+	      electrical and automation systems for oil wells, SWDs, and other field operations both large and small. Initially I was hired on as an
+	      Automation Technician and was trained to program PLCs for automation projects. At the same time I trained myself to be network admin and oversee
+	      SCADA systems for many of Haarmeyer's clients. I was promoted and held the position of I.T. Manager with duties spanning all of the aforementioned
+	  including hiring and managing a growing department, networking and PC support. I was the owner’s go-to for anything I.T. related.
+	    </div> <!-- haarm_desc -->
+	    <ul>
+	      <li class='head'>Duties</li>
+	      <li>Manage IT department of team ranging from 2 to 4 people.</li>
+	      <li>Maintenance and development of I.T. infrastructure LAN/WAN and servers.</li>
+	      <li>Consult in I.T. for job proposals and bids.</li>
+	      <li>programming and maintenance of Django web framework and website.</li>
+	      <li>Responsible for updating and maintaining SCADA systems for clients.</li>
+	      <li>Customer support.</li>
+	      <li>PLC programming for automation panels which are installed in field on customer sites.</li>
+	    </ul>
+	  </div><!-- card-body -->
+	</div><!-- card -->
+	
+	<div class='card mb-4'>
+	  <div class='card-header'>09/2010 – 08/2014, Self employed</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>IT consultant</div>
+	    <a href="#consult_desc" data-toggle='collapse'>More about my consulting</a>
+	    <div id='consult_desc' class='collapse'>
+	      I worked as a consultant mostly out of necessity as it was the only way to remain flexible while I put myself through school. I did consulting work with various clients throughout the Albuquerque area, mostly attorneys.
+	    </div>
+	    <ul>
+	      <li class='head'>Duties</li>
+	      <li>Provide on-call support.</li>
+	      <li>Consult in small-office I.T. needs including best-practices and technology proposals to meet business objectives.</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+	
+	<div class='card mb-4'>
+	  <div class='card-header'>06/2009 – 04/2010: Leader Technologies</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>Project Manager and Programmer</div>
+	    <a href="#leader_desc" data-toggle='collapse'>More about Leader Technologies</a>
+	    <div id='leader_desc' class='collapse'>
+	      Leader Technologies is a (now defunct) user registration and tracking company focused on software and product registration, third-party client data collection and storage.
+	    </div>
+	    
+	    <ul>
+	      <li class='head'>Duties</li>
+	      <li>Design and implement web based and program based registration pages.</li>
+	      <li>Implement turn-key embedded registration programs.</li>
+	      <li>Plan out and estimate time and resources required for each project, manage contacts and service customers needs as needed.</li>
+	    </ul>
+	  </div><!-- card-body -->
+	</div><!-- card -->
+
+	<div class='card mb-4'>
+	  <div class='card-header'>10/2006 – 01/2009: Albuquerque Publishing Company (Aka. Albuquerque Journal/Tribune)</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>Network Administration and Help Desk</div>
+	    <a href="#apc_desc" data-toggle='collapse'>More about Albuquerque Publishing Company</a>  
+	    <div id='apc_desc' class='collapse'>
+	      Albuquerque Publishing Company publishes the Albuquerque Journal, Wall Street Journal and previously the Albuquerque Tribune.
+	    </div>
+	    <ul>
+	      <li class='head'>Duties</li>    
+	      <li>Maintenance of various servers (mostly Unix/Novell).</li>
+	      <li>Resolve computer related issues on an as-needed basis.</li>
+	      <li>Run and report on critical nightly reports.</li>
+	    </ul>
+	  </div> <!-- card body -->
+	</div><!-- card -->
+	
+	<div class='card mb-4'>
+	  <div class='card-header'>09/2005 - 10/2006: Frank's Supply Inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>Network Technician</div>
+	    <a href="#franks_desc" data-toggle='collapse'>More about Frank's Supply</a>  
+	    <div id='franks_desc' class='collapse'>
+	      Frank's Supply Inc. is a 50+ year old organization with offices in Albuquerque, Farmington, Los Alamos and El Paso. They have
+	      Point to Point connections going between those locations with a T1 connection to the Internet in Albuquerque. The primary network
+	      application is a Terminal/Server based system with the server in Albuquerque. The two major projects I worked on were as
+	      follows: 1. Setting up E-Commerce site which tied into existing Prelude Database for which I was primarily responsible for.
+	      2: Upgrading and cleaning up antiquated Network Hardware which was an IT Department team effort.
+	    </div>
+	    <ul>
+	      <li class='head'>Duties</li>    
+	      <li>Maintain and troubleshoot Prelude system.</li>
+	      <li>Set up VIA proprietary E-Commerce service.</li>
+	      <li>Maintain and troubleshoot WAN/LAN (all 4 locations).</li>
+	      <li>Internal Help Desk support.</li>
+	      <li>Maintain office hardware (Computers, Copiers and Fax machines)</li>
+	    </ul>
+	  </div> <!-- card body -->
+	</div><!-- card -->
+
+	<div class='card mb-4'>
+	  <div class='card-header'>04/2003 – 08/2005: DocuMation Inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>Mis Director/Technician</div>
+	    <a href="#docu_desc" data-toggle='collapse'>More about DocuMation Inc.</a>  
+	    <div id='docu_desc' class='collapse'>
+	      Documation is an office equipment sales and support company. I was initially hired as the MIS Director. I learned through
+	      experience the sales and copier technician sides of the business. Earning along the way the Ricoh Core Basics Certification.
+	    </div>
+	    <ul>
+	      <li class='head'>Duties</li>    
+	      <li>Provide pre-sales IT consultation.</li>
+	      <li>Field IT support and copier repair.</li>
+	      <li>Support and maintain Documation’s WAN/LAN. (Includes Albuquerque and Santa Fe offices)</li>
+	    </ul>
+	  </div> <!-- card body --> 
+	</div><!-- card -->
+	
+	<div class='card mb-4'>
+	  <div class='card-header'>09/02 – 03/03: Wired Nation Inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>Consultant/Technician</div>
+	    <a href="#wired_desc" data-toggle='collapse'>More about Wired Nation</a>  
+	    <div id='wired_desc' class='collapse'>
+	      Wired nation was a Managedd Services Provider (MSP). Clients of Wired Nation Inc. were small to medium sized local businesses
+	      with users ranging from 1-100+ per client. Multiple platforms supported (Windows 95-XP workstation/server, Novell, Linux - RedHat/Mandrake,
+	      UNIX – SCO, Sys V). Support was provided on site in most cases.
+	    </div>
+	    
+	    <ul>
+	      <li class='head'>Duties</li>    
+	      <li>Provide on site support/troubleshooting (off site only when necessary) for clients.</li>
+	      <li>Provide phone support.</li>
+	      <li>Track hours spent at clients/traveling/in office.</li>
+	      <li>Track mileage.</li>
+	      <li>Document troubleshooting steps.</li>
+	      <li>Resell hardware.</li>
+	      <li>Emergency pager duty about once a month.</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+
+	<div class='card mb-4'>
+	  <div class='card-header'>10/1999 – 02/2002: Searchbuilder.com Inc. / SITU Partners, Inc.</div>
+	  <div class='card-body'>
+	    <div class='font-italic'>JAVA/Web Programmer, Network Administrator, Tech Support</div>
+	    <a href="#situ_desc" data-toggle='collapse'>More about SITU Partners</a>  
+	    <div id='situ_desc' class='collapse'>
+	      Initially hired as employee number three for a Top-ten rated Search Engine Optimization firm located in Santa Fe, NM. Responsibilities were
+	      focused on HTML coding and search engine placement. Quickly given more responsibility as a Junior Systems Administrator and began programming
+	      in C/C++ and Python as well as LAN/WAN administrative duties on a Linux/Windows2000 network.  As the company grew I became the Senior HTML
+	      Coder, responsible for training and supervision of a department of four. I also expanded my programming knowledge to JAVA and programmed several
+	      applications. I was then moved to a Systems Operator position and participated in the companies “Seeker” project as well as other Network
+	      Administrative duties. The “Seeker” project created a Distributed Processing Platform written in JAVA. The project life cycle spanned two
+	      years and I had heavy involvement creating pattern-matching parsers utilizing PERL 5 Regular Expressions/ ORO Matcher.
+	    </div>
+	    
+	    <ul>
+	      <li class='head'>Duties</li>    
+	      <li>JAVA programming JAVA 1.x , JAVA 2, using the IBM SDK and the Sun SDK.</li>
+	      <li>Integrated PERL 5 Regular Expression pattern matching into “Seeker” project.</li>
+	      <li>Python2.x and C/C++ custom programs and applications.</li>
+	      <li>Provide quality assurance for coding team members.</li>
+	      <li>Install and maintain client-side CVS.</li>
+	      <li>Troubleshoot / maintain / update UNIX DNS and Apache configuration of 300+ domains across 4 UNIX/Linux/FreeBSD web servers.</li>
+	      <li>Install, Maintain & troubleshoot 10/100BaseT Ethernet UNIX / Linux / NT / WIN98 -2000 Lan/Wan and Workstations (Including software and hardware conflict resolution).</li>
+	      <li>Assist administration and installation of MS Exchange 5-2000 server.</li>
+	      <li>HTML/Java script/DHTML Code corporate web sites including optimizing pages for search engine placement.</li>
+	      <li>Implement and maintain ‘IP Delivery’ technology for search engine placement.</li>
+	      <li>Research and make recommendations on new technological solutions (software, hardware, networking).</li>
+	      <li>Research, report and recommend best COA (Course of Action) for new search engine technologies and developments.</li>
+	    </ul>
+	  </div><!-- card body -->
+	</div><!-- card -->
+	<a href='#experience' data-toggle="collapse">(Collapse: Experience)</a>
+      </div><!-- card body experience -->
+    </div><!-- card experience -->
+    
+    <div class='card mb-4'>
+      <div class='card-header'>
+	<h4>Education</h4>
+	<a href="#education"
+	   data-toggle="collapse">(Explore)</a>
+      </div><!-- card header -->
+      <div class='card-body collapse'
+	   id="education"
+	   data-parent="#accordion">
+	<ul class='list-group'>
+	  <li class='list-item'>Graduated with an A.A. in General Studies at Central New Mexico CC., 3.5 GPA, 2013</li>
+	  <li class='list-item'>Graduated with an A.S. in Computer Science From Sanford Brown College, 3.6 GPA, 1999</li>
+	</ul>
+      </div><!-- card body -->
+    </div><!-- card education -->
+  </div><!-- accordion -->
+  <div class='card mb-4'>
+  </div>
+</div><!-- bg-dark -->
+
+{% endblock %}

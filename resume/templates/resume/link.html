@@ -1,0 +1,43 @@
+<div class='card mb-4' id='link-check-all-display' >
+  <div class='card-header' id='linkHeading'>
+		<div class='form-check'>
+			<input type='hidden' 
+				name='link-check-all' 
+				value="False">
+	  	<input class='form-check-input' 
+				type='checkbox' id='link-check-all' 
+				name='cert-check-all' 
+				value='True' checked>
+	  	<label class='form-check-label' for='cert-check-all'>
+	    	<h4>Professional Certifications</h4>
+	  	</label>
+		</div> <!--form check-->
+	</div><!-- card header -->
+			
+  <div class='card-body' > <!--collapse show'
+	   aria-labelledby='certHeading'
+	   id="certifications"
+	   data-parent="#accordion">-->
+
+		{% for cert in certs %}
+		<div id='cert-check-{{ cert.id }}-display'>
+			<div class='form-check'>
+				<input type='hidden' 
+				name='cert-check-{{ cert.id }}' 
+				value='False'>
+				<input class='form-check-input' 
+				type='checkbox' 
+				id='cert-check-{{ cert.id }}' 
+				name='cert-check-{{ cert.id }}'
+				value='True' checked>
+					<label class='form-check-label' 
+					for='cert-check-{{ cert.id }}'>{{ cert.description }}{% if cert.link %}<small>&nbsp;<a class='text-secondary'
+	       			   		              						    	   								     href="https://www.youracclaim.com/badges/3aec8761-c65d-408b-91e5-bac25ceb94fb/public_url">(Verify)</a>
+																																							</small>{% endif %}
+					</label>
+			</div><!-- form check -->
+		</div>
+	  {% endfor %}
+		
+	</div><!-- card body -->
+</div><!-- card -->

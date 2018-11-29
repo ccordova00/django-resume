@@ -1,0 +1,43 @@
+{% extends "index_base.html" %}
+{% load static %}     
+{% block title %}Corban T. Cordova{% endblock %}
+
+{% block content %}
+
+<style>
+  li.head {
+  text-decoration: underline;
+  list-style-type: none;
+  font-size: 1em;
+  }
+  input.checkbox {
+  margin : 30px 0 0 0
+  }
+</style>
+<form action='.' method='post'>
+  <div class="bg-dark">
+    <div class='text-center display-4 mb-4 text-light'>Corban T. Cordova
+      <button type="submit" class="btn btn-primary float-right">Download PDF</button>
+    </div>
+    
+    <div id="accordion">
+      
+      {% include "resume/cert.html" %}
+      {% include "resume/skill.html" %}
+      {% include "resume/exp.html" %}
+      {% include 'resume/ed.html' %}
+ 
+    </div><!-- accordion -->
+
+    <div class='card mb-4'>
+    </div>
+  </div><!-- bg-dark -->
+  {% csrf_token %}
+</form>
+{% endblock %}
+
+{% block myinclude %}
+<script type='text/javascript' src="{% static "js/resume.js" %}"></script>
+{% endblock %}
+
+

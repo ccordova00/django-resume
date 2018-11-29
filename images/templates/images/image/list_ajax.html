@@ -1,0 +1,21 @@
+{% load thumbnail %}
+
+<!-- <div class='d-flex flex-wrap'> -->
+<div class='d-flex flex-wrap justify-content-center'>
+{% for image in images %}
+<div class='item m-1'>
+
+  <a href="{{ image.get_absolute_url }}">
+    {% thumbnail image.image "300x300" crop="center" padding=True as im %}
+    <img src="{{ im.url }}" class='rounded-top'>
+  </a>
+  {% endthumbnail %}
+
+  <div class='text-truncate font-italic bg-secondary' style='max-width: 300px'>
+    <a href="{{ image.get_absolute_url }}" class='text-white m-2'>
+      {{ image.title }}
+    </a>
+  </div>
+</div><!-- item -->
+{% endfor %}
+</div> <!-- container d-flex -->

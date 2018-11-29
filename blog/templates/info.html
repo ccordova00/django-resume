@@ -1,0 +1,12 @@
+<html>
+  <head><title></title>
+  </head>
+  <body>
+    {{ request.current_app }}
+    {% for key, value in request.GET %}
+    <p>{{ key }} = {{ value }}</p>
+    {% endfor %}
+
+
+  </body>
+</html>

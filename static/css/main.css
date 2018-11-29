@@ -1,0 +1,26 @@
+#my_name {
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    /*    font-size: 3em; */
+    font-size: 3vw;
+    /*    font-family:"Verdana", sans-serif; */
+}
+
+a.pro_suffix {
+    text-align:center;
+    text-transform: capitalize;
+    color: #bbb;
+    font-size: 0.75em;
+    /*    font-family:"Verdana", sans-serif; */
+}
+
+#pro_suffix {
+    text-align:center;
+    text-transform: uppercase;
+    color: #bbb;
+    font-size: 1.25em;
+    /*    font-family:"Verdana", sans-serif; */
+}
